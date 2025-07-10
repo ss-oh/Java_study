@@ -10,7 +10,7 @@ public class 숙제_신승오 {
 		Scanner sc = new Scanner(System.in);
         boolean go = true; //while 반복용
 
-        double[] answer = new double[3]; //소수점 까지 표기하기위해 double 사용 , 배열 10번까지 표기
+        double[] answer = new double[3]; //소수점 까지 표기하기위해 double 사용 , 배열 3번까지 표기
         int cnt = 0; // 계산 결과 저장용 변수
 
         while (go) { // true 일때 반복
