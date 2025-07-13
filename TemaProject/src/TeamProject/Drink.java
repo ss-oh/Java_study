@@ -9,8 +9,11 @@ public class Drink extends Product{
 
 	@Override
 	public void showInfo() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("상품번호: " + getProductId());
+	    System.out.println("상품명: " + getName());
+	    System.out.println("가격: " + getPrice() + "원");
+	    System.out.println("재고: " + getStock() + "개");
+	    System.out.println("---------------------------");
 	}
 
 	

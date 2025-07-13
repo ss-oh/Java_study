@@ -1,18 +1,22 @@
 package TeamProject;
 
 public class Cosmetic extends Product{
-	
+
 	public Cosmetic(int price, int stock, int productId, String name) {
-		this.price = price;
-		this.stock = stock;
-		this.productId = productId;
-		this.name = name;
+		super(price, stock, productId, name);
+		// TODO Auto-generated constructor stub
 	}
-	Cosmetic[] cosmetic = {
-			
-	new Cosmetic(10000, 1, 22, "아이라이너"),
-	new Cosmetic(106600, 2, 23, "썬크림"),
-	new Cosmetic(2030, 3, 35, "립스틱")
-	};
+
+	@Override
+	public void showInfo() {
+		System.out.println("상품번호: " + getProductId());
+	    System.out.println("상품명: " + getName());
+	    System.out.println("가격: " + getPrice() + "원");
+	    System.out.println("재고: " + getStock() + "개");
+	    System.out.println("---------------------------");
+		
+	}
+	
+	
 }
 

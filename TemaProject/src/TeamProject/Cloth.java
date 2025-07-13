@@ -2,19 +2,22 @@ package TeamProject;
 
 public class Cloth extends Product {
 
-	
 	public Cloth(int price, int stock, int productId, String name) {
-		this.price = price;
-		this.stock = stock;
-		this.productId = productId;
-		this.name = name;
+		super(price, stock, productId, name);
+		// TODO Auto-generated constructor stub
 	}
-	Cloth[] cloth = {
-			
-	new Cloth(1000, 1, 22, "청바지"),
-	new Cloth(1000, 2, 23, "반바지"),
-	new Cloth(2030, 3, 35, "레깅스")
-	};
+
+	@Override
+	public void showInfo() {
+		System.out.println("상품번호: " + getProductId());
+	    System.out.println("상품명: " + getName());
+	    System.out.println("가격: " + getPrice() + "원");
+	    System.out.println("재고: " + getStock() + "개");
+	    System.out.println("---------------------------");
+		
+	}
+
+	
 	
 	
 	
